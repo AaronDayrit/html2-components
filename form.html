@@ -11,46 +11,71 @@
         <form method="get">
 
 
-            <!--user address-->
+            <!--Creates label for user's STREET ADDRESS
+                Creates textbox for user text input with placeholder
+            -->
             <label for="user's address">Address:</label>
             <input type="text" name="user address" placeholder="Place address here" size="50" maxlegth="50" id="user's address"/>
             <br>
-            <!--postal-->
+            <!--Creates label for user's POSTAL CODE
+                Creates a textbox for user text input with placeholder
+            -->
             <label for="user's postal code">Postal:</label>
             <input type="text" name="postal code address" placeholder="Place postal code here" size="50" maxlegth="10" id="user's postal code"/>
 
-            <!--City-->
+            <!--Creates label for user's CITY
+                Creates a textbox for user text input with placeholder
+            -->
             <br>
             <label for="user's city">City:</label>
             <input type="text" name="user's city" placeholder="Place city address here" size="50" maxlegth="40" id="user's city"/>
 
+            <!--Bolded text-->
+            <b><p>What shipping method would you like?</p></b>
 
-            <p>What shipping method would you like?</p>
-
+            <!--Dropdown menu for shipping methods
+                Creates 3 options with a specific value listed for shipping
+            -->
             <select name="shipping" id="shipping">
                 <option value ="Standard">"Standard"</option>
                 <option value ="One-Day">"One-Day"</option>
                 <option value ="Two-Day">"Two-Day"</option>
             </select>
 
-            <p>What payment method would you like?</p>
+            <u><p>What payment method would you like?</p></u>
 
+            <!--Radio button inputs for payment method
+                Different values but same names for 1 PAYMENT METHOD
+                Paypal prechecked as standard payment
+            -->
             <label for="Debit">Debit </label><input type="radio" id="Debit" name="Pay" value="Debit">
             <label for="Paypal">Paypal </label><input type="radio" id="Paypal" name="Pay" value="Paypal" checked>
             <label for="Credit">Credit </label><input type="radio" id="Credit" name="Pay" value="Credit">
     
             <br> <br>
-            <label for="comments">Additional Comments"</label>
+
+            <!--Label with underline-->
+            <label for="comments"><i>Additional Comments</i>"</label>
             <br> <br>
 
+            <!--Aditional comments box
+                Sets size for textbox
+            -->
             <textarea rows = "4" cols="40" name="comments" id="comments"></textarea>
             <br>
+
+
+            <!--Check boxes for EMAIL and SAVED PAYMENT
+                Creates label with input type checkbox
+            -->
+        
             <label> <input type="checkbox" name="emailUpdates" checked/> Sign me up for email updates </label>
             <br>
             <label> <input type="checkbox" name="savePayment" checked/> Save my payment methods </label>
 
             <br><br>
 
+            <!--Create submit button for dilivery of shipping form-->
             <input type = "submit">
         
         </form>
